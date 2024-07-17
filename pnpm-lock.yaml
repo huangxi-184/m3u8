@@ -17,7 +17,7 @@ importers:
       xgplayer:
         specifier: ^3.0.18
         version: 3.0.18(core-js@3.37.1)
-      xgplayer-hls.js:
+      xgplayer-hls:
         specifier: ^3.0.18
         version: 3.0.18(core-js@3.37.1)(xgplayer@3.0.18(core-js@3.37.1))
     devDependencies:
@@ -161,6 +161,10 @@ packages:
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0-0
+
+  '@babel/runtime@7.24.8':
+    resolution: {integrity: sha512-5F7SDGs1T72ZczbRwbGO9lQi0NLjQxzl6i4lJxLxfW9U5UluCSyEJeniWvnhl3/euNiqQVbo8zruhsDfid0esA==}
+    engines: {node: '>=6.9.0'}
 
   '@babel/template@7.24.7':
     resolution: {integrity: sha512-jYqfPrU9JTF0PmPy1tLYHW4Mp4KlgxJD9l2nP9fD6yT/ICi554DmrWBAEYpIelzjHf1msDP3PxJIRt/nFNfBig==}
@@ -683,6 +687,11 @@ packages:
   concat-map@0.0.1:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
 
+  concat-typed-array@1.0.2:
+    resolution: {integrity: sha512-aC878bxeWSlrY6h60cCDwBUXpKwovZrB7+C4+VHNO1CIXW2gBLxbQ757jWtOXUscLGgYI8R84N6uy9fTJPe+0g==}
+    engines: {node: '>=0.10.0'}
+    deprecated: 'WARNING: This package has been renamed to typed-array-concat.'
+
   convert-source-map@2.0.0:
     resolution: {integrity: sha512-Kvp459HrV2FEJ1CAsi1Ku+MY3kasH19TFykTz2xWmMeq6bk2NU3XXvfJ+Q61m0xktWwt+1HSYf3JZsTms3aRJg==}
 
@@ -692,6 +701,9 @@ packages:
   cross-spawn@7.0.3:
     resolution: {integrity: sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w==}
     engines: {node: '>= 8'}
+
+  crypto-es@1.2.7:
+    resolution: {integrity: sha512-UUqiVJ2gUuZFmbFsKmud3uuLcNP2+Opt+5ysmljycFCyhA0+T16XJmo1ev/t5kMChMqWh7IEvURNCqsg+SjZGQ==}
 
   cssesc@3.0.0:
     resolution: {integrity: sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==}
@@ -719,10 +731,6 @@ packages:
 
   deep-is@0.1.4:
     resolution: {integrity: sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==}
-
-  deepmerge@2.0.1:
-    resolution: {integrity: sha512-VIPwiMJqJ13ZQfaCsIFnp5Me9tnjURiaIFxfz7EH0Ci0dTSQpZtSLrqOicXqEd/z2r+z+Klk9GzmnRsgpgbOsQ==}
-    engines: {node: '>=0.10.0'}
 
   delegate@3.2.0:
     resolution: {integrity: sha512-IofjkYBZaZivn0V8nnsMJGBr4jVLxHDheKSW88PyxS5QC4Vo9ZbZVvhzlSxY87fVq3STR6r+4cGepyHkcWOQSw==}
@@ -940,9 +948,6 @@ packages:
   hasown@2.0.2:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
-
-  hls.js@1.5.13:
-    resolution: {integrity: sha512-xRgKo84nsC7clEvSfIdgn/Tc0NOT+d7vdiL/wvkLO+0k0juc26NRBPPG1SfB8pd5bHXIjMW/F5VM8VYYkOYYdw==}
 
   ignore@5.3.1:
     resolution: {integrity: sha512-5Fytz/IraMjqpwfd34ke28PTVMjZjJG2MPn5t7OE4eUCUNf8BAa7b5WUS9/Qvr6mwOQS7Mk6vdsMno5he+T8Xw==}
@@ -1249,6 +1254,9 @@ packages:
     resolution: {integrity: sha512-hOS089on8RduqdbhvQ5Z37A0ESjsqz6qnRcffsMU3495FuTdqSm+7bhJ29JvIOsBDEEnan5DPu9t3To9VRlMzA==}
     engines: {node: '>=8.10.0'}
 
+  regenerator-runtime@0.14.1:
+    resolution: {integrity: sha512-dYnhHh0nJoMfnkZs6GmmhFknAGRrLznOu5nc9ML+EJxGvrx6H7teuevqVqCuPcPK//3eDrrjQhehXVx9cnkGdw==}
+
   resolve-from@4.0.0:
     resolution: {integrity: sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==}
     engines: {node: '>=4'}
@@ -1451,14 +1459,24 @@ packages:
   wrappy@1.0.2:
     resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
 
-  xgplayer-hls.js@3.0.18:
-    resolution: {integrity: sha512-7QYqwEfEavmMw/KHUOVZTbwHhy+p4ps32dpHvw8OJWmQEMJxK1/V5w415HeKRSgi+8osoo7XObHx5XF/8bDAuQ==}
+  xgplayer-hls@3.0.18:
+    resolution: {integrity: sha512-6pn+qaaE1wdknOdW/AEcbZbwrYLVxA4U7Q3BhEEcCVu9P5Mybc477kN+sOBIMZRhSK+Cx6vOUTk2b/iS8tPMmg==}
     peerDependencies:
       core-js: '>=3.12.1'
-      xgplayer: '>=3.0.13'
+      xgplayer: 3.0.18
+
+  xgplayer-streaming-shared@3.0.18:
+    resolution: {integrity: sha512-PslUtcfaiEdYmuCk3UFJdLVCDht/uTu6pqc1x6cUP56y6oBzn+I6Y6px0Y5/8bSk9DBZekO3D+SOTlRUX1N5vQ==}
+    peerDependencies:
+      core-js: '>=3.12.1'
 
   xgplayer-subtitles@3.0.18:
     resolution: {integrity: sha512-8xGt3RB1FIu7393Qmfejd9f2JMogEzHjjxv+mzskWHmfT7N9X1xm6JmwCVnfMQXhKZSTtZsinEGCl1VqRjkE1g==}
+    peerDependencies:
+      core-js: '>=3.12.1'
+
+  xgplayer-transmuxer@3.0.18:
+    resolution: {integrity: sha512-UBQUeFI5GQZBKpAU/1/930Kk32uvVkWKMyL5Ri+rp/iB8LzYHtaU6k8yR92Tg5yKabPXzBzt5dyoEitP/mUPYQ==}
     peerDependencies:
       core-js: '>=3.12.1'
 
@@ -1605,6 +1623,10 @@ snapshots:
     dependencies:
       '@babel/core': 7.24.9
       '@babel/helper-plugin-utils': 7.24.8
+
+  '@babel/runtime@7.24.8':
+    dependencies:
+      regenerator-runtime: 0.14.1
 
   '@babel/template@7.24.7':
     dependencies:
@@ -2073,6 +2095,8 @@ snapshots:
 
   concat-map@0.0.1: {}
 
+  concat-typed-array@1.0.2: {}
+
   convert-source-map@2.0.0: {}
 
   core-js@3.37.1: {}
@@ -2082,6 +2106,8 @@ snapshots:
       path-key: 3.1.1
       shebang-command: 2.0.0
       which: 2.0.2
+
+  crypto-es@1.2.7: {}
 
   cssesc@3.0.0: {}
 
@@ -2101,8 +2127,6 @@ snapshots:
       ms: 2.1.2
 
   deep-is@0.1.4: {}
-
-  deepmerge@2.0.1: {}
 
   delegate@3.2.0: {}
 
@@ -2378,8 +2402,6 @@ snapshots:
     dependencies:
       function-bind: 1.1.2
 
-  hls.js@1.5.13: {}
-
   ignore@5.3.1: {}
 
   import-fresh@3.3.0:
@@ -2627,6 +2649,8 @@ snapshots:
     dependencies:
       picomatch: 2.3.1
 
+  regenerator-runtime@0.14.1: {}
+
   resolve-from@4.0.0: {}
 
   resolve@1.22.8:
@@ -2828,18 +2852,30 @@ snapshots:
 
   wrappy@1.0.2: {}
 
-  xgplayer-hls.js@3.0.18(core-js@3.37.1)(xgplayer@3.0.18(core-js@3.37.1)):
+  xgplayer-hls@3.0.18(core-js@3.37.1)(xgplayer@3.0.18(core-js@3.37.1)):
     dependencies:
       core-js: 3.37.1
-      deepmerge: 2.0.1
-      event-emitter: 0.3.5
-      hls.js: 1.5.13
+      eventemitter3: 4.0.7
       xgplayer: 3.0.18(core-js@3.37.1)
+      xgplayer-streaming-shared: 3.0.18(core-js@3.37.1)
+      xgplayer-transmuxer: 3.0.18(core-js@3.37.1)
+
+  xgplayer-streaming-shared@3.0.18(core-js@3.37.1):
+    dependencies:
+      core-js: 3.37.1
+      eventemitter3: 4.0.7
 
   xgplayer-subtitles@3.0.18(core-js@3.37.1):
     dependencies:
       core-js: 3.37.1
       eventemitter3: 4.0.7
+
+  xgplayer-transmuxer@3.0.18(core-js@3.37.1):
+    dependencies:
+      '@babel/runtime': 7.24.8
+      concat-typed-array: 1.0.2
+      core-js: 3.37.1
+      crypto-es: 1.2.7
 
   xgplayer@3.0.18(core-js@3.37.1):
     dependencies:
